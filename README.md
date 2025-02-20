@@ -1,2 +1,68 @@
-# steganography
-LSB steganography is a technique that conceals information by modifying the least significant bits of an image's pixel data.  Encode: Hide text messages inside images. Decode: Extract hidden messages from encoded images. The tool is implemented using Python's tkinter for the GUI and the Pillow (PIL) library for image processing.
+## LSB Steganography Tool
+
+This repository contains a simple Python-based tool for hiding and revealing secret messages within images using Least Significant Bit (LSB) steganography. It provides a graphical user interface (GUI) for ease of use.
+
+### Description
+
+LSB steganography is a technique that conceals information by modifying the least significant bits of an image's pixel data. Since these changes are subtle, they are usually imperceptible to the human eye. This tool allows users to:
+
+* **Encode:** Hide text messages inside PNG, JPG, JPEG, and BMP images.
+* **Decode:** Extract hidden messages from encoded images.
+
+The tool is implemented using Python's `tkinter` for the GUI and the `Pillow` (PIL) library for image processing.
+
+### Features
+
+* User-friendly graphical interface.
+* Supports common image formats (PNG, JPG, JPEG, BMP).
+* Simple encoding and decoding processes.
+* Null character termination to improve decoded message accuracy.
+
+### Installation
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone [repository URL]
+    cd [repository directory]
+    ```
+
+2.  **Install the required libraries:**
+
+    ```bash
+    pip install Pillow
+    ```
+
+3.  **Run the application:**
+
+    * To encrypt an image, run `python encryption_gui.py`.
+    * To decrypt an image, run `python decryption_gui.py`.
+
+### Usage
+
+**Encryption:**
+
+1.  Launch the encryption GUI (`python encrypt.py`).
+2.  Click "Browse" to select the image you want to use.
+3.  Enter the secret message in the "Message" text box.
+4.  Click "Browse" to choose the output file name and location.
+5.  Click "Encode."
+
+**Decryption:**
+
+1.  Launch the decryption GUI (`python decrypt.py`).
+2.  Click "Browse" to select the encoded image.
+3.  Click "Decode."
+4.  The hidden message will be displayed in the result label.
+
+### Notes
+
+* The size of the message you can encode depends on the size of the image.
+* For text messages, null character termination is used to ensure accurate decoding.
+* For binary data, message length encoding is recommended.
+* This is a simple tool for educational purposes. For production use, consider more robust steganography libraries.
+
+### Contributing
+
+Contributions are welcome! Please feel free to submit pull requests or open issues for bug fixes, feature requests, or improvements.
+
