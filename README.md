@@ -35,8 +35,8 @@ The tool is implemented using Python's `tkinter` for the GUI and the `Pillow` (P
 
 3.  **Run the application:**
 
-    * To encrypt an image, run `python encryption_gui.py`.
-    * To decrypt an image, run `python decryption_gui.py`.
+    * To encrypt an image, run `python encrypt.py`.
+    * To decrypt an image, run `python decrypt.py`.
 
 ### Usage
 
@@ -47,6 +47,8 @@ The tool is implemented using Python's `tkinter` for the GUI and the `Pillow` (P
 3.  Enter the secret message in the "Message" text box.
 4.  Click "Browse" to choose the output file name and location.
 5.  Click "Encode."
+6.  <img width="687" alt="Screenshot 2025-02-20 at 13 29 25" src="https://github.com/user-attachments/assets/19fd6bd3-1f25-4fe4-87a9-7b69ffd03216" />
+
 
 **Decryption:**
 
@@ -54,6 +56,8 @@ The tool is implemented using Python's `tkinter` for the GUI and the `Pillow` (P
 2.  Click "Browse" to select the encoded image.
 3.  Click "Decode."
 4.  The hidden message will be displayed in the result label.
+5.  <img width="687" alt="Screenshot 2025-02-20 at 13 27 58" src="https://github.com/user-attachments/assets/d6efc0d7-6c3e-41b0-b3de-026aa2260c21" />
+
 
 ### Notes
 
